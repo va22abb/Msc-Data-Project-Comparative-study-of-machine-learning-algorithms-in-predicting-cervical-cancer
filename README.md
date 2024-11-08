@@ -15,5 +15,7 @@ clinical relevance?
 **Dependencies**
 
 Install or use any Python IDE preferably Google Colab or Jupyter notebook.
+
 Install any required Python library packages for EDA, Model Development, and Performance Evaluation, preferably using pip, pip install -r requirements.txt
+
 Libraries: pandas, numpy, scikit-learn, keras, matplotlib, tensorflow, joblib.
