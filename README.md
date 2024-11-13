@@ -6,6 +6,10 @@
 
 Comparative-study-of-machine-learning-algorithms-in-predicting-cervical-cancer.
 
+**Project Overview**
+
+Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and Logistic Regression to assess their effectiveness in predicting cervical cancer. Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliability. The ultimate goal is to enhance screening and early diagnosis.
+
 **Research Question**
 
 To what extent can machine learning algorithms be effectively optimized and compared for the accurate 
