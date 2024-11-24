@@ -8,7 +8,7 @@ Comparative-study-of-machine-learning-algorithms-in-predicting-cervical-cancer.
 
 **Project Overview**
 
-Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and Logistic Regression to assess their effectiveness in predicting cervical cancer. Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliability. The ultimate goal is to enhance screening and early diagnosis.
+Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and XGBOOST to assess their effectiveness in predicting cervical cancer. Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliabilit project also uses Explainable AI techniques, SHAP (SHapley Additive exPlanations), to highlight how individual features contribute to the model's predictions. This makes the model's decisions more transparent and helps in understanding the key factors influencing the outcomes. The ultimate goal is to improve screening and enable earlier diagnosis.
 
 **Data Overview**
 
@@ -24,6 +24,6 @@ clinical relevance?
 
 Install or use any Python IDE preferably Google Colab or Jupyter notebook.
 
-Install any required Python library packages for EDA, Model Development, and Performance Evaluation.
+Install any required Python library packages for EDA, Model Development, and Performance Evaluation,preferably Confusion matrix(accuracy,precision,Recall and F1-Score) and AUC Score, ROC Curve.
 
-Libraries: pandas, numpy, scikit-learn, keras, matplotlib, tensorflow.
+Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn (including tools for SVM, Random Forest, StandardScaler, and evaluation metrics like confusion matrix and classification report).
