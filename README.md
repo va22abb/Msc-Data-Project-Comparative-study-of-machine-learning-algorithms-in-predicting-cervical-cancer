@@ -8,7 +8,7 @@ Comparative-study-of-machine-learning-algorithms-in-predicting-cervical-cancer.
 
 **Project Overview**
 
-Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and XGBOOST to assess their effectiveness in predicting cervical cancer. Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliabilit project also uses Explainable AI techniques, SHAP (SHapley Additive exPlanations), to highlight how individual features contribute to the model's predictions. This makes the model's decisions more transparent and helps in understanding the key factors influencing the outcomes. The ultimate goal is to improve screening and enable earlier diagnosis.
+Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and XGBOOST to assess their effectiveness in predicting cervical cancer and also optimized with hyperparameter tuning . Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliabilit project also uses Explainable AI techniques, SHAP (SHapley Additive exPlanations), to highlight how individual features contribute to the model's predictions. This makes the model's decisions more transparent and helps in understanding the key factors influencing the outcomes. The ultimate goal is to improve screening and enable earlier diagnosis.
 
 **Data Overview**
 
