@@ -8,7 +8,7 @@ Comparative-study-of-machine-learning-algorithms-in-predicting-cervical-cancer.
 
 **Project Overview**
 
-Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and XGBOOST to assess their effectiveness in predicting cervical cancer and also optimized with hyperparameter tuning . Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliabilit project also uses Explainable AI techniques, SHAP (SHapley Additive exPlanations), to highlight how individual features contribute to the model's predictions. This makes the model's decisions more transparent and helps in understanding the key factors influencing the outcomes. The ultimate goal is to improve screening and enable earlier diagnosis.
+Cervical cancer prediction models play a crucial role in early detection and personalized care. This project compares machine learning models such as Random Forest, Support Vector Machine and XGBOOST to assess their effectiveness in predicting cervical cancer and also optimized with hyperparameter tuning . Using clinical and demographic data, the study will investigate how data preparation and feature selection impact model accuracy and reliabilit project also uses Explainable AI techniques, SHAP (SHapley Additive exPlanations), to highlight how individual features contribute to the model's predictions. This makes the model's decisions more transparent and helps in understanding the key factors influencing the outcomes. The ultimate goal is to improve screening and enable earlier diagnosis. SMOTE (Synthetic Minority Oversampling Technique Addictive) was also implemented to address class imbalance in datasets. This improved the dataset's balance and also ensured better model training and evaluation.
 
 **Project Structure**
 
@@ -46,12 +46,21 @@ Install any required Python library packages for EDA, Model Development, and Per
 
 Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn (including tools for SVM, Random Forest, StandardScaler, and evaluation metrics like confusion matrix and classification report).
 
-**Result Short Note**
+**Result**
 
-Three classification modelsX GBoost, Random Forest, and Support Vector Classifier (SVC) were tested to solve a binary classification problem with unbalanced data. Before applying SMOTE, XGBoost performed the best overall, achieving 96% accuracy and handling both classes well, especially the minority class with high recall and F1-scores. Random Forest followed closely with an impressive accuracy of 98%, showing strong performance across both classes after hyperparameter tuning. On the other hand, SVC worked well for the majority class (Class 0) but struggled to predict the minority class (Class 1), limiting its effectiveness.
+Result and Analysis
 
-After using SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset, all models showed improvements in handling the minority class. XGBoost and Random Forest both achieved 96% accuracy, maintaining strong and balanced performance across both classes. SVC also improved, achieving 94% accuracy and better predictions for the minority class. SMOTE helped reduce class imbalance, boosting recall and F1-scores for the minority class, particularly for SVC.
+This study evaluates the performance of three machine learning models—XGBoost, Random Forest Classifier, and Support Vector Classifier (SVC)—for a binary classification task with unbalanced data. The primary goal is to determine which model best handles the minority class while considering critical metrics such as accuracy, precision, recall, and F1-score. Additionally, confusion matrix analysis and ROC curve evaluation provide further insight into model discrimination capabilities. To improve prediction accuracy, Random Search hyperparameter tuning was employed, while SHAP analysis enhanced interpretability by identifying key feature contributions.
 
-Overall, metrics like confusion matrices, ROC curves, and SHAP analysis highlighted the strengths and weaknesses of each model. While Random Forest and XGBoost remain the most reliable options, the use of SMOTE shows how addressing class imbalance can make all models fairer and more accurate.
+Classification Models Performance
 
+The initial evaluation reveals that XGBoost outperforms the other models, achieving the highest overall accuracy (96%) and demonstrating balanced performance across both classes. SVC shows reliable results for Class 0 but struggles with Class 1, reflected in its lower F1-score for this class. Random Forest exhibits similar performance issues, especially in predicting the minority class.
+Impact of SMOTE
+Applying SMOTE (Synthetic Minority Over-sampling Technique) significantly enhances the recall for the minority class across all models. Random Forest and XGBoost show the most improvement, with better F1-scores and increased accuracy. Despite a minor precision loss, SMOTE effectively mitigates class imbalance, improving overall model robustness.
+
+Hyperparameter Tuning and Final Comparison
+
+After hyperparameter optimization, Random Forest achieves the best results with an overall accuracy of 98% and the highest F1-score for Class 1 (0.86). XGBoost follows closely, maintaining balanced performance. SVC, while improving slightly, remains less effective in handling the minority class. ROC curve analysis confirms that Random Forest and XGBoost have superior discriminative power, both achieving an AUC of 0.98.
+Explainability with SHAP
+SHAP analysis highlights key features influencing predictions, with Schiller and cytology being the most impactful. The SHAP summary and waterfall plots provide interpretability, aiding in understanding the models' decision-making processes. This transparency ensures reliable use in real-world applications such as cervical cancer risk prediction.
 
